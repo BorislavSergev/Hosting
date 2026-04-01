@@ -1,19 +1,15 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Nexus — Build the Future",
-  description: "The AI-powered platform that transforms how teams collaborate, ship, and scale. Join thousands of innovators already building tomorrow.",
-};
+  title: 'NexusBG — Bulgarian Cloud Hosting',
+  description: 'Deploy apps, databases, and workers on European infrastructure. Bulgarian-owned, GDPR compliant, Hetzner-powered.',
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
-  );
+  )
 }
